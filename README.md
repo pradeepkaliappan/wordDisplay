@@ -27,22 +27,24 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
 
 
-Project Features:
-Add Word Display
+**Project Features:**
+**Add Word Display**
 ![image](https://user-images.githubusercontent.com/32547280/161442329-f5d3ba5b-43cc-4a3f-8691-8482ca381d36.png)
 
-Display Existing items:
+**Display Existing items:**
 ![image](https://user-images.githubusercontent.com/32547280/161442348-f3b9bf39-4232-4d9a-a39b-f1ef1bc0441b.png)
 
-Editing Existing Items:
+**Editing Existing Items:**
 ![image](https://user-images.githubusercontent.com/32547280/161442376-6babaa33-4dec-4d63-bb80-f7943f9d0289.png)
 
 On clicking Deleting Buttons the tiles are Deleted.
 
-SQL Updates:
+**SQL Updates:**
 Create Local Database with Table containing
 Columns:
 
 ID: int
 value: NVARCHAR(255)
 
+**Reference video:**
+https://drive.google.com/file/d/1YR0lLHcFYzQlDTluxqgV6S-525K_52gg/view?usp=sharing
