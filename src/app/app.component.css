@@ -1,0 +1,105 @@
+.fluid{
+    display: flex;
+    text-align: center;
+    background-color:pink;
+    height: 100%;
+    width:100%;
+    position: fixed;
+    top:0;
+    left:0;
+    flex-direction: column;
+    margin:0;
+}
+.container-fluid{
+    display: flex;
+    text-align: center;
+    background-color: black;
+    opacity: 0.85;
+    color:white;
+    width: 100%;
+}
+.container-fluid > h1{
+    flex:auto;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    gap: 20px;
+    padding-top: 50px;
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+  
+  .box > * {
+    flex: 1;
+  }
+  .contentSection{
+    background-color: black;
+    height: 100px;
+    color: white;
+    border-radius: 10%;
+    text-align: center;
+    opacity: 0.90;
+    align-items: center;
+    }
+    .buttonSection{
+        height: 50px;
+        display: grid;
+    }
+  .labelSection{
+    max-width: 150px;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+    height: 100%;
+    word-break: break-all;
+    display: inline-flex;
+    align-items: center;
+  }
+  .editButton{
+    height: 40px;
+    margin-top: 5px;
+    background-color: darkgreen;
+    border-radius: 10%;
+    opacity: 0.7
+  }
+  .deleteButton{
+    height: 40px;
+    margin-top: 5px;
+    background-color: darkred;
+    border-radius: 10%;
+    opacity: 0.70px;
+  }
+
+.editIcon, .deleteIcon, .saveButton{
+  color: black;
+  font-weight: bolder;
+}
+.inputSection{
+  color: black;
+  width: 80%;
+  height: 80%;
+  margin: 10%;
+  word-break: break-all;
+}
+
+.addNewButton{
+  margin:20px;
+}
+
+.singlebox{
+  display: grid;
+  grid-template-columns: repeat(1, 150px);
+  grid-template-rows: repeat(1, 200px);
+  grid-gap: 20px;
+  gap: 20px;
+  padding-top: 50px;
+  padding-right: 10%;
+  padding-left: 10%;
+  align-self: center;
+}
+
+[hidden] {
+  display: none !important;
+}

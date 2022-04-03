@@ -1,0 +1,50 @@
+<body class="fluid">
+  <div class="container-fluid">
+  <h1>Incubyte Software</h1>
+  </div>
+  <div class="addNewButton">
+    <button type="button" (click)="showNewMode()" class="btn btn-primary">Add New Item</button>
+  </div>
+
+  <h2  [ngClass]="[hide]">Add Items</h2>
+<div id="addSection" class="singlebox" [ngClass]="[hide]">
+  
+  <div>
+  <div class="contentSection">
+    <span  class="labelSection">
+      <input placeholder="Enter word here..." [(ngModel)] ="newWord" class="inputSection" type="text" value="One">
+    </span> </div>
+  <div class="buttonSection">
+    <button type="button" (click)="createEvent()" class=" btn btn-default btn-sm editButton">
+      <span class="saveButton"> Save</span>
+    </button>
+  </div>
+</div>
+</div>
+
+<div  [ngClass]="[displaySectionHide]">
+  <h2>Display Items</h2>
+</div>
+<div class="box" [ngClass]="[displaySectionHide]">
+  
+  <div  *ngFor="let word of words" >
+  <div class="contentSection">
+    <span  id="hideLabel_{{word.Id}}"  class="labelSection">{{word.Value}}</span>
+      <input  class="inputSection hidden" type="text" id="hideInput_{{word.Id}}" [(ngModel)] ="updatedWord"  value="{{word.Value}}">
+     </div>
+  <div class="buttonSection">
+    <button type="button"  id="hideEdit_{{word.Id}}" (click)="editWord([word.Id])" class=" btn btn-default btn-sm editButton editSource">
+      <span class="glyphicon glyphicon-pencil editIcon"></span>
+    </button>
+    <button type="button"  id="hideSave_{{word.Id}}" (click)="saveWord([word.Id])" class="hidden btn btn-default btn-sm editButton saveSource">
+      <span>Save </span>
+    </button>
+    
+    <button type="button" id="delete_{{word.Id}}" (click)="deleteWord([word.Id])" class="btn btn-default btn-sm deleteButton">
+      <span class="glyphicon glyphicon-trash deleteIcon"></span>
+    </button>
+  </div>
+</div>
+</div>
+
+</body>
