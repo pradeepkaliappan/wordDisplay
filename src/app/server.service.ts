@@ -34,6 +34,6 @@ export class ServerService {
     }
 
     deleteEvent(event:any) {
-      return this.request('DELETE', `${environment.serverUrl}/event/${event.Id}`);
+      return this.request('DELETE', `${environment.serverUrl}/event/${event.Id}`,event);
     }
 }
